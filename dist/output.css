@@ -554,15 +554,6 @@ video {
   display: none;
 }
 
-.mx-auto {
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.mt-2 {
-  margin-top: 0.5rem;
-}
-
 .ml-10 {
   margin-left: 2.5rem;
 }
@@ -583,16 +574,12 @@ video {
   height: auto;
 }
 
-.w-auto {
-  width: auto;
-}
-
-.w-\[20px\] {
-  width: 20px;
-}
-
 .w-\[30px\] {
   width: 30px;
+}
+
+.w-auto {
+  width: auto;
 }
 
 .flex-1 {
@@ -634,10 +621,6 @@ video {
 
 .to-\[\#9a2e9a\] {
   --tw-gradient-to: #9a2e9a var(--tw-gradient-to-position);
-}
-
-.p-0\.5 {
-  padding: 0.125rem;
 }
 
 .p-10 {
