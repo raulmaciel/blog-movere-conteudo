@@ -558,16 +558,36 @@ video {
   position: fixed;
 }
 
+.relative {
+  position: relative;
+}
+
 .bottom-5 {
   bottom: 1.25rem;
+}
+
+.left-0 {
+  left: 0px;
 }
 
 .right-5 {
   right: 1.25rem;
 }
 
+.top-0 {
+  top: 0px;
+}
+
 .z-50 {
   z-index: 50;
+}
+
+.z-\[-1\] {
+  z-index: -1;
+}
+
+.mb-4 {
+  margin-bottom: 1rem;
 }
 
 .ml-4 {
@@ -614,12 +634,24 @@ video {
   height: 1.75rem;
 }
 
+.h-full {
+  height: 100%;
+}
+
+.w-20 {
+  width: 5rem;
+}
+
 .w-24 {
   width: 6rem;
 }
 
 .w-6 {
   width: 1.5rem;
+}
+
+.w-\[200px\] {
+  width: 200px;
 }
 
 .w-auto {
@@ -642,8 +674,17 @@ video {
   align-items: center;
 }
 
+.justify-center {
+  justify-content: center;
+}
+
 .justify-between {
   justify-content: space-between;
+}
+
+.gap-x-8 {
+  -moz-column-gap: 2rem;
+       column-gap: 2rem;
 }
 
 .space-x-4 > :not([hidden]) ~ :not([hidden]) {
@@ -658,24 +699,12 @@ video {
   margin-bottom: calc(0.5rem * var(--tw-space-y-reverse));
 }
 
-.bg-fuchsia-950 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(74 4 78 / var(--tw-bg-opacity, 1));
+.rounded-md {
+  border-radius: 0.375rem;
 }
 
-.bg-gray-100 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(243 244 246 / var(--tw-bg-opacity, 1));
-}
-
-.bg-slate-400 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(148 163 184 / var(--tw-bg-opacity, 1));
-}
-
-.bg-slate-200 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(226 232 240 / var(--tw-bg-opacity, 1));
+.bg-fuchsia-900\/70 {
+  background-color: rgb(112 26 117 / 0.7);
 }
 
 .bg-gradient-to-r {
@@ -692,12 +721,30 @@ video {
   --tw-gradient-to: rgb(154 46 154 / 0.9) var(--tw-gradient-to-position);
 }
 
+.bg-cover {
+  background-size: cover;
+}
+
+.bg-center {
+  background-position: center;
+}
+
 .p-36 {
   padding: 9rem;
 }
 
 .p-6 {
   padding: 1.5rem;
+}
+
+.px-8 {
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+.py-6 {
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
 }
 
 .pt-28 {
@@ -708,27 +755,12 @@ video {
   text-align: center;
 }
 
-.font-bree {
-  font-family: "Bree Serif", serif;
-}
-
 .font-barlow {
   font-family: "Barlow Condensed", sans-serif;
 }
 
-.text-xl {
-  font-size: 1.25rem;
-  line-height: 1.75rem;
-}
-
-.text-6xl {
-  font-size: 3.75rem;
-  line-height: 1;
-}
-
-.text-9xl {
-  font-size: 8rem;
-  line-height: 1;
+.font-bree {
+  font-family: "Bree Serif", serif;
 }
 
 .text-2xl {
@@ -773,6 +805,58 @@ video {
   --tw-backdrop-blur: blur(4px);
   -webkit-backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);
   backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);
+}
+
+.transition-all {
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
+.duration-300 {
+  transition-duration: 300ms;
+}
+
+@keyframes slideshow {
+  0% {
+    background-image: url('../src/assets/imagem1.png');
+    background-size: cover;
+    background-position: center;
+    transform: scale(1);
+    opacity: 1;
+  }
+
+  33% {
+    background-image: url('../src/assets/imagem2.png');
+    background-size: cover;
+    background-position: center;
+    transform: scale(1.1);
+    opacity: 1;
+  }
+
+  66% {
+    background-image: url('../src/assets/imagem3.png');
+    background-size: cover;
+    background-position: center;
+    transform: scale(1.1);
+    opacity: 1;
+  }
+
+  100% {
+    background-image: url('../src/assets/imagem1.png');
+    background-size: cover;
+    background-position: center;
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.animate-slideshow {
+  animation: slideshow 20s infinite ease-in-out;
+}
+
+.hover\:bg-fuchsia-950\/80:hover {
+  background-color: rgb(74 4 78 / 0.8);
 }
 
 .hover\:text-fuchsia-300:hover {

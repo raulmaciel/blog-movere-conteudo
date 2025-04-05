@@ -1,3 +1,38 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@keyframes slideshow {
+  0% {
+    background-image: url('../src/assets/imagem1.png');
+    background-size: cover;
+    background-position: center;
+    transform: scale(1);
+    opacity: 1;
+  }
+  33% {
+    background-image: url('../src/assets/imagem2.png');
+    background-size: cover;
+    background-position: center;
+    transform: scale(1.1);
+    opacity: 1;
+  }
+  66% {
+    background-image: url('../src/assets/imagem3.png');
+    background-size: cover;
+    background-position: center;
+    transform: scale(1.1);
+    opacity: 1;
+  }
+  100% {
+    background-image: url('../src/assets/imagem1.png');
+    background-size: cover;
+    background-position: center;
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.animate-slideshow {
+  animation: slideshow 20s infinite ease-in-out;
+}

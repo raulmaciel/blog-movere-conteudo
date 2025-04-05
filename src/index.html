@@ -17,7 +17,8 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Bree+Serif&display=swap" rel="stylesheet">
 </head>
-<body class="bg-gray-100">
+<body class="relative">
+  <div class="fixed top-0 left-0 w-full h-full z-[-1] animate-slideshow bg-cover bg-center"></div>
   <header>
     <nav class="p-6 md:p-10 font-barlow font-light text-white flex flex-wrap justify-between items-center bg-gradient-to-r from-[#692a8c]/90 to-[#9a2e9a]/90 backdrop-blur-sm">
       <div class="ml-4">
@@ -58,26 +59,26 @@
     <img src="assets/whatsapp.png" alt="WhatsApp" class="w-24 h-24"/>
   </a>
 
-  <main class="bg-slate-200 text-center font-barlow">
+  <main class="text-center font-barlow">
     <div class="pt-28">
-      <h1 class="font-extralight text-xl text-blue-950 text-4xl">Sua comunicação só precisa de <span class="font-bree text-fuchsia-900">estratégia</span> para dar certo.</h1>
+      <h1 class="font-extralight text-blue-950 text-4xl">Sua comunicação só precisa de <span class="font-bree text-fuchsia-900">estratégia</span> para dar certo.</h1>
     </div>
-    <section class="p-36 ml-7 mr-7 justify-between md:w-auto md:flex md:items-center md:space-x-6">
-      <h2 class="text-2xl">
-        <a href="">
-          <img src="" alt="imagem de uma caixa de dialogo">
+    <section class="p-36 ml-7 mr-7 md:w-auto md:flex md:items-center md:space-x-6 flex gap-x-8 justify-center flex-wrap">
+      <h2 class="text-2xl text-white">
+        <a href="" class="flex flex-col items-center justify-center bg-fuchsia-900/70 rounded-md py-6 px-8 w-[200px] hover:bg-fuchsia-950/80 transition-all duration-300">
+          <img src="assets/ico_consultoria.png" alt="imagem de uma caixa de dialogo" class="mb-4 w-20 h-30">
           Consultoria de comunicação
         </a>
       </h2>
-      <h2 class="text-2xl">
-        <a href="">
-          <img src="" alt="imagem de um alvo">
+      <h2 class="text-2xl text-white">
+        <a href="" class="flex flex-col items-center justify-center bg-fuchsia-900/70 rounded-md py-6 px-8 w-[200px] hover:bg-fuchsia-950/80 transition-all duration-300">
+          <img src="assets/ico_estrategias.png" alt="imagem de um alvo" class="mb-4 w-20 h-30">
           Implementação de estratégias
         </a>
       </h2>
-      <h2 class="text-2xl">
-        <a href="">
-          <img src="" alt="imagem de produção de conteúdo">
+      <h2 class="text-2xl text-white">
+        <a href="" class="flex flex-col items-center justify-center bg-fuchsia-900/70 rounded-md py-6 px-8 w-[200px] hover:bg-fuchsia-950/80 transition-all duration-300">
+          <img src="assets/icon_prod_cont.png" alt="imagem de produção de conteúdo" class="mb-4 w-20 h-30">
           Produção de Conteúdo
         </a>
       </h2>
